@@ -22,7 +22,7 @@ if ($_GET['title'] != '') {
     $tmp1 = stristr($html, 'videoId');
     $tmp2 = stristr($tmp1, '","', true);
     $res = str_replace('videoId":"', '', $tmp2);
-    $newURL = 'trailer.php?query='.$res;
+    $newURL = 'yt_trailer.php?query='.$res;
     header('Location: '.$newURL);
 }
 
